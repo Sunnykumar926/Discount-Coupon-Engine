@@ -12,10 +12,10 @@ The architecture is designed to mimic real-world e-commerce platforms where mult
 
 At a high level, the system consists of four major components:
 
-Product and Cart Management
-Coupon Management
-Discount Calculation Mechanism
-Coupon Processing Framework
+- Product and Cart Management
+- Coupon Management
+- Discount Calculation Mechanism
+- Coupon Processing Framework
 
 The interaction among these components enables the system to determine which discounts are applicable, calculate discount values, and produce the final payable amount for a customer.
 
