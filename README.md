@@ -41,10 +41,10 @@ Rather than creating separate and unrelated discount mechanisms, the system intr
 
 Every coupon must answer four fundamental questions:
 
-Is the coupon applicable to the current cart?
-How much discount should be provided?
-Can the coupon be combined with other coupons?
-How should the discount be applied?
+1. Is the coupon applicable to the current cart?
+2. How much discount should be provided?
+3. Can the coupon be combined with other coupons?
+4. How should the discount be applied?
 
 This abstraction allows the system to treat all coupon types uniformly while enabling each coupon to implement its own business rules.
 
