@@ -278,9 +278,9 @@ Used in coupon processing.
 
 Benefits:
 
-Dynamic coupon chains
-Decoupled request handling
-Easier feature expansion
+- Dynamic coupon chains
+- Decoupled request handling
+- Easier feature expansion
 
 ## Scalability and Extensibility
 
@@ -289,10 +289,10 @@ One of the strongest characteristics of this architecture is its scalability.
 Suppose a business introduces a new promotional scheme such as:
 
 Student Discount
-Referral Bonus
-First Purchase Discount
-Festival Cashback
-Corporate Membership Discount
+- Referral Bonus
+- First Purchase Discount
+- Festival Cashback
+- Corporate Membership Discount
 
 A developer only needs to create a new coupon class extending the Coupon abstraction.
 
