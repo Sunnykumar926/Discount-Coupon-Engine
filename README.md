@@ -129,8 +129,8 @@ The flat discount strategy provides a fixed monetary reduction regardless of the
 
 Examples:
 
-₹100 off
-₹500 off
+- ₹100 off
+- ₹500 off
 
 The discount value remains constant and independent of the cart total.
 
@@ -142,8 +142,8 @@ The percentage discount strategy calculates discounts as a percentage of the car
 
 Examples:
 
-10% off
-20% off
+- 10% off
+- 20% off
 
 The discount grows proportionally with the purchase amount.
 
@@ -157,8 +157,8 @@ To prevent excessive losses, businesses often introduce a maximum discount limit
 
 Examples:
 
-20% off up to ₹500
-15% off up to ₹1000
+- 20% off up to ₹500
+- 15% off up to ₹1000
 
 The strategy calculates the percentage discount and then compares it with the maximum allowed discount. The smaller value is selected.
 
@@ -174,10 +174,10 @@ Instead of creating strategy objects manually throughout the application, the sy
 
 This design provides several benefits:
 
-Centralized object creation
-Reduced coupling
-Easier maintenance
-Better scalability
+- Centralized object creation
+- Reduced coupling
+- Easier maintenance
+- Better scalability
 
 If a new discount strategy is introduced in the future, modifications are required only within the strategy manager rather than across the entire application.
 
@@ -187,10 +187,10 @@ The CouponManager serves as the central authority responsible for managing coupo
 
 Its responsibilities include:
 
-Registering coupons
-Storing coupon information
-Identifying applicable coupons
-Applying coupons to carts
+- Registering coupons
+- Storing coupon information
+- Identifying applicable coupons
+- Applying coupons to carts
 
 The manager maintains a collection of coupons and evaluates them against the current cart.
 
@@ -208,18 +208,18 @@ This design effectively creates a linked chain of coupons.
 
 Each coupon in the chain performs three actions:
 
-Evaluate eligibility.
-Apply discount if eligible.
-Forward processing to the next coupon.
+- Evaluate eligibility.
+- Apply discount if eligible.
+- Forward processing to the next coupon.
 
 This behavior resembles the Chain of Responsibility Design Pattern.
 
 The pattern provides several advantages:
 
-Flexible coupon ordering
-Simplified coupon stacking
-Easy addition of new coupon types
-Reduced coupling between coupon implementations
+- Flexible coupon ordering
+- Simplified coupon stacking
+- Easy addition of new coupon types
+- Reduced coupling between coupon implementations
 
 Instead of a monolithic discount engine, the system processes coupons incrementally through the chain.
 
@@ -255,22 +255,22 @@ Used to encapsulate different discount calculation algorithms.
 
 Benefits:
 
-Runtime flexibility
-Easy extensibility
-Reduced code duplication
+- Runtime flexibility
+- Easy extensibility
+- Reduced code duplication
 
 ### Singleton Pattern
 
 Used in:
 
-CouponManager
-DiscountStrategyManager
+- CouponManager
+- DiscountStrategyManager
 
 Benefits:
 
-Single source of truth
-Controlled access
-Reduced memory usage
+- Single source of truth
+- Controlled access
+- Reduced memory usage
 
 ### Chain of Responsibility Pattern
 
